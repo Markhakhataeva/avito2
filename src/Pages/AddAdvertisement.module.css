@@ -1,0 +1,18 @@
+.title>span,.photo>span,.description>span,.price>span{
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+.photo,.description,.price{
+    margin-top: 40px;
+}
+.description>textarea{
+    width: 500px;
+    height: 200px;
+    resize: none;
+
+}
+.button{
+    margin-top: 100px;
+}
