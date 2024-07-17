@@ -6,7 +6,7 @@ export const Card = ({ card }) => {
   return (
     <>
       <div className={styles.card_body}>
-        <Link to="/advertisement">
+        <Link to={`/advertisement/${card.id}`}>
           <div className={styles.card_image}>
             <img src={card.image} alt="" />
           </div>
