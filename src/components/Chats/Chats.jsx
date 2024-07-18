@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from "../../Pages/messages.module.css"
-import {Chatss} from "./chat-mock";
-import Chat from "./Chat";
+import {Chat} from "./Chat"
+import {useSelector} from "react-redux";
 
 
 function Chats(props) {
+    const chats=useSelector(state => state.chats.chats);
+
     return (
         <div className={styles.chats}>
             {
-                Chatss.map((chat) => <Chat chat={chat}/>)
+                chats.map((chat) => <Chat chat={chat}/>)
             }
         </div>
     );

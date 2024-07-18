@@ -19,7 +19,11 @@ const InputStyle = styled.input`
 
 function Input(props) {
   return (
-   <InputStyle placeholder={props.placeholder} {...props}  />
+   <InputStyle placeholder={props.placeholder}
+               type={props.type}
+               {...props}
+
+   />
   );
 }
 

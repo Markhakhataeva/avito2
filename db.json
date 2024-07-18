@@ -1,4 +1,3 @@
-
 {
   "advertisement": [
     {
@@ -96,6 +95,78 @@
       "location": "Грозный",
       "date": "Сегодня, 12:44",
       "image": "https://10.img.avito.st/image/1/1.7tqzg7a4QjOFKoA245CIrJkhQDUNIsA7xSdAMQMqSjkF.NSDKzumXBvgmSVi1yyE6UVHIpERI2S9vDLgganos5QE"
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": ";k",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 13
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": ";k",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 14
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": ";k",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 15
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": "jo;k;\n\n",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 16
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": "jo;k;\n\n",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 17
+    },
+    {
+      "title": "",
+      "price": "",
+      "image": "",
+      "description": "jo;k;\n\n",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 18
+    },
+    {
+      "title": "",
+      "price": "6687",
+      "image": "",
+      "description": "jo;k;\n\n",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 19
+    },
+    {
+      "title": "jlkn",
+      "price": "6687",
+      "image": "jn",
+      "description": "jo;k;\n\n",
+      "date": "19.08.24",
+      "location": "Argun",
+      "id": 20
     }
   ],
   "title": [
@@ -523,4 +594,3 @@
     }
   ]
 }
-

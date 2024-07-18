@@ -1,8 +1,7 @@
 import React from 'react';
 import heart from "../../assets/heart.svg"
 import mes from "../../assets/mes.svg"
-import ellipse from "../../assets/ellipse.svg"
-
+import link from "../../assets/link.png"
 import styles from "./header.module.css"
 import {Button} from "../Button/Button";
 import {Link} from "react-router-dom";
@@ -30,11 +29,11 @@ export const Navigation = (props) => {
             </Link>
             </div>
 
-        <div className={styles.ellipse}>
-          <div>
-            <img src={ellipse} alt="ellipse" />
+        <div className={styles.ellipse}  onClick={()=> setShow(!show)}>
+          <div className={styles.ava}>
+            <img src={link} alt="ellipse" />
           </div>
-          <p onClick={()=> setShow(!show)}>Lincode</p>
+          <p>Lincode</p>
             {
                 show ? (
                     <div className={styles.absolute}><DropDown/></div>

@@ -1,26 +1,61 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Input from "../components/Input/Input";
 import styles from "./AddAdvertisement.module.css";
 import {Button} from "../components/Button/Button";
+import {useDispatch} from "react-redux";
+import {addresses} from "../redux/Reducers/openAdvertisement/action";
+import {SendDate} from "../redux/SendDate/action";
 
 
 
 function AddAdvertisement(props) {
+    const [nameOfAdvertisement, setNameOfAdvertisement] = React.useState("");
+    const [image,setImage] = React.useState("");
+    const [description,setDescription] = React.useState("");
+    const [price,setPrice] = React.useState("");
+    const [location,setLocation]=useState("")
+    const dispatch = useDispatch();
+
+    const handleSubmit = () => {
+        dispatch(SendDate(nameOfAdvertisement,image,description,price,location))
+    }
   return (
     <div className="container">
       <h1>Разместить объявление</h1>
       <div className={styles.title}>
         <span>Название объявления</span>
-        <Input placeholder="Название объявления" width="800px" />
+        <input
+               placeholder="Название объявления"
+               value={nameOfAdvertisement}
+               onChange={(e)=>setNameOfAdvertisement(e.target.value)}
+               type="text"
+                   />
+
+
       </div>
-      <div className={styles.photo}>
-        <span>Картинка объявления</span>
-        <Input placeholder="Картинка объявления" width="800px" />
-      </div>
-      <div className={styles.description}>
-        <span>Описание</span>
-        <textarea />
-      </div>
+        <div className={styles.photo}>
+            <span>Картинка объявления</span>
+            <input
+            placeholder="Картинка объявления"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+            type="text"
+        />
+        </div>
+        <div className={styles.description}>
+            <span>Описание</span>
+            <textarea
+            onChange={(e) => setDescription(e.target.value)}
+            value={description}
+            />
+        </div>
+
+        <div className={styles.location}>
+            <span>Ваша локация</span>
+            <input
+                   type="text" value={location}
+                   onChange={(e) => setLocation(e.target.value)}/>
+        </div>
         <div className={styles.price}>
             <span>Цена</span>
             <select>
@@ -37,10 +72,14 @@ function AddAdvertisement(props) {
             </select>
             <p>или введите свою цену</p>
 
-            <Input placeholder="Введите цену" type="number" width="800px"/>
-
+            <input
+                placeholder="Введите цену"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+                type="text"
+            />
             <div className={styles.button}>
-                <Button text="Отправить" color={"white"} width="250px"/>
+                <Button text="Отправить" color={"white"} width="250px" onSubmit={handleSubmit}/>
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@ import {useEffect} from "react";
 import {useDispatch} from "react-redux";
 import {loadCards} from "../redux/Reducers/homeAdvertisementReducer/ action";
 import {addresses, desk, loadTitle, phone, sliderImage} from "../redux/Reducers/openAdvertisement/action";
+import {chat} from "../redux/chatRed/action"
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -20,6 +21,7 @@ export const App = () => {
         dispatch(sliderImage())
         dispatch(phone())
         dispatch(addresses())
+        dispatch(chat())
     }, []);
 
 

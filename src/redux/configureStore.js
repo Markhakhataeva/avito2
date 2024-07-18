@@ -3,6 +3,8 @@ import {thunk} from "redux-thunk";
 import {createLogger} from "redux-logger/src";
 import {homeAdvertisementReducer} from "./Reducers/homeAdvertisementReducer/homeAdvertisementReducer";
 import {openAdvertisement} from "./Reducers/openAdvertisement/openAdvertisement";
+import {sendDateReducer} from "./SendDate/SennReducer";
+import {chatRed} from "./chatRed/chatRed";
 
 
 const logger = createLogger({
@@ -12,7 +14,9 @@ const logger = createLogger({
 
 const rootReducer = combineReducers({
     cards:homeAdvertisementReducer,
-    openCards:openAdvertisement
+    openCards:openAdvertisement,
+    sendDateReducer:sendDateReducer,
+    chats:chatRed
 })
 
 

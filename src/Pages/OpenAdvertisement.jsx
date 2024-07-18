@@ -18,28 +18,24 @@ export const OpenAdvertisement = (props) => {
     const slides=useSelector(state => state.openCards.slides);
     const phone=useSelector(state => state.openCards.phone);
     const addresses=useSelector(state => state.openCards.addresses);
-    const filterdesk=desk.filter((elem)=>elem.advertisementId ===id)
-    const filtertitle=title.filter((elem)=>elem.id ===id)
-    const filterslides=slides.filter((elem)=>elem.id ===id)
-    const filterphone=phone.filter((elem)=>elem.id ===id)
-    const filteraddresses=addresses.filter((elem)=>elem.id ===id)
+
 
     return (
         <div className="container">
             <Breadcrumbs/>
             {
-                filtertitle.map((item)=><TitleAndPrice item={item} key={item.id}/>)
+                title.filter((elem)=>elem.id ===id).map((item)=><TitleAndPrice item={item} key={item.id}/>)
             }
             <AdvertisementButtons/>
             <div className="slider_button">
                 <div className="slider_left">
                     {
-                        filterslides.map((item)=><Slider item={item} key={item.id}/>)
+                        slides.filter((elem)=>elem.id ===id).map((item)=><Slider item={item} key={item.id}/>)
                     }
                 </div>
                 <div className="slider_right">
                     {
-                        filterphone.map((item)=> <Button text={item.phone} color={"white"} width="300px" padding="15px" fontSize="23px"/>)
+                        phone.filter((elem)=>elem.id ===id).map((item)=> <Button text={item.phone} color={"white"} width="300px" padding="15px" fontSize="23px"/>)
                     }
                     <br/>
                     <Button text="Написать сообщение" color={"white"} width="300px" padding="15px" fontSize="23px"/>
@@ -48,10 +44,10 @@ export const OpenAdvertisement = (props) => {
             </div>
 
             {
-                filterdesk.map((item)=><Description item={item} key={item.advertisementId}/>)
+                desk.filter((elem)=>elem.advertisementId ===id).map((item)=><Description item={item} key={item.advertisementId}/>)
             }
             {
-                filteraddresses.map((item)=><Location item={item} key={item.id}/>)
+                addresses.filter((elem)=>elem.id ===id).map((item)=><Location item={item} key={item.id}/>)
             }
         </div>
     );
