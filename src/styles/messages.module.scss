@@ -1,0 +1,125 @@
+.container {
+  width: 1620px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  width: 20%;
+  > ul {
+    list-style: none;
+    padding: 0;
+    > li {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  > hr {
+    margin-top: 30px;
+  }
+}
+.menu_logo {
+  width: 130px;
+  height: 130px;
+  > img {
+    width: 130px;
+    display: block;
+  }
+}
+
+.menu_title {
+  width: 130px;
+  > span {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+.raiting {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  > span {
+    font-size: 22px;
+    display: block;
+    font-weight: 600;
+  }
+}
+.star {
+  color: #ffa700;
+  padding-left: 12px;
+}
+.active {
+  background: rgba(1, 23, 101, 1);
+  color: #fff;
+  width: 200px;
+  padding-left: 30px !important;
+  border-radius: 5px;
+  &:hover {
+    color: #fff;
+    width: 200px;
+    padding-left: 30px !important;
+    border-radius: 5px;
+    background-color: #3526c8;
+  }
+}
+
+.messages {
+  width: 70%;
+  > span {
+  font-size: 30px;
+  font-weight: 600;
+}
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 20px;
+}
+.search > input {
+  padding: 8px;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(220, 216, 216, 1);
+  padding-left: 30px;
+  & :focus{
+    outline: none;
+  }
+  &::-webkit-input-placeholder{
+    color: gray;
+  }
+}
+
+.chat{
+  background-color: rgba(235, 235, 235, 1);
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.chat1 >p {
+  margin: 0;
+  padding-top: 10px;
+}
+.user{
+  padding: 30px;
+ }
+ .name,.title,.mes{
+   padding-left: 10px;
+}
+
+ .name>p{
+   font-size: 22px;
+   font-weight: 600;
+ }
+ .title>p{
+   font-size: 13px;
+ }
+ .mes>p {
+   font-size: 10px;
+ }

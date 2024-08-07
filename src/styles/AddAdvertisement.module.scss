@@ -1,0 +1,47 @@
+
+.title,.photo,.description,.price,.location{
+    >span {
+        display: block;
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    >input{
+        width: 800px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid gray;
+        background-color: gray;
+        color: white;
+    }
+    >input::-webkit-input-placeholder{
+        color: white;
+    }
+    >input:focus {
+        outline: none;
+    }
+}
+.photo,.description,.price{
+    margin-top: 40px;
+}
+.description>textarea{
+    height: 200px;
+    resize: none;
+    width: 800px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+
+    &:focus {
+        outline: none;
+    }
+
+}
+.button{
+    margin-top: 100px;
+}
+.location>span{
+   margin-top: 40px;
+}

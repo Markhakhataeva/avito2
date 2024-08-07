@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+.menu{
+    margin: 0;
+    width: 580px;
+  >ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    > li{
+      color: white;
+    }
+  }
+}
+
+.navig{
+   width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  >a{
+    text-decoration: none;
+  }
+}
+
+.announc>a{
+   color: white;
+    text-decoration: none;
+
+}
+
+.ellipse{
+display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+.ava{
+    width: 50px;
+    height: 50px;
+}
+.ellipse>.ava>img{
+    display: block;
+    width: 100%;
+}
+.ellipse>p{
+    margin: 0;
+    padding-left: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.absolute{
+    position: absolute;
+    top:60px;
+    left: -60px;
+}

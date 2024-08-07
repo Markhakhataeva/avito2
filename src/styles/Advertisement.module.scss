@@ -1,0 +1,52 @@
+.adver{
+    width: 70%
+}
+.actived{
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+.archiv,.actived{
+    display: block;
+    font-size:21px ;
+    font-weight: 600;
+}
+.brothers{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.border{
+    border-bottom: 1px solid #c5baba;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 60%;
+}
+.img{
+    width: 300px;
+    height: 300px;
+
+  >img{
+    width: 100%;
+    display: block;}
+  }
+
+ .text{
+     width: 290px;
+ }
+ .cource{
+     font-size: 22px;
+     font-weight: 600;
+     color: rgba(3, 130, 247, 1);
+ }
+ 
+ .price{
+     font-size: 18px;
+     font-weight: bold;
+ }
+ .location{
+     font-size: 13px;
+     color: rgba(160, 160, 160, 1)
+ }
